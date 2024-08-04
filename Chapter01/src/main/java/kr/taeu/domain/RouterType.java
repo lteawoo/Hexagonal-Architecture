@@ -1,4 +1,4 @@
-package java.kr.taeu.domain;
+package kr.taeu.domain;
 
 /**
  * 라우터 Type을 나타내는 값 객체

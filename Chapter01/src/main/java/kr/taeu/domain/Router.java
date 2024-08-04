@@ -1,4 +1,4 @@
-package java.kr.taeu.domain;
+package kr.taeu.domain;
 
 import java.util.List;
 import java.util.function.Predicate;

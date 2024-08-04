@@ -1,4 +1,4 @@
-package java.kr.taeu.domain;
+package kr.taeu.domain;
 
 public class RouterId {
 
@@ -6,5 +6,9 @@ public class RouterId {
 
     public RouterId(String id) {
         this.id = id;
+    }
+
+    public static RouterId of (String id) {
+        return new RouterId(id);
     }
 }
