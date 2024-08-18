@@ -1,14 +1,20 @@
 package kr.taeu.domain;
 
+import java.util.UUID;
+
 public class RouterId {
 
-    private String id;
+    private final UUID id;
 
-    public RouterId(String id) {
+    public RouterId(UUID id) {
         this.id = id;
     }
 
-    public static RouterId of (String id) {
-        return new RouterId(id);
+    public static RouterId withId(String id) {
+        return new RouterId(UUID.fromString(id));
+    }
+
+    public static RouterId withoutId() {
+        return new RouterId(UUID.randomUUID());
     }
 }
